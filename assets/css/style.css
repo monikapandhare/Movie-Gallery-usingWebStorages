@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(4,43,95);
+}
+.backDrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+}
+.backDrop.visible{
+    display: block;
+    animation: fade-in 0.3s ease-in-out;
+    
+}
+
+.mymodel.visible{
+    display: block;
+    animation: fade-slide-down 0.5s ease-in forwards;
+}
+.mymodel{
+    position: fixed;
+    top: 30vh;
+    left: 20%;
+    width: 60%;
+    display: none;
+}
+
+@keyframes fade-slide-down{
+    from{
+        margin-top: -50%;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in{
+    from{  
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.movieinfo{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+background-size: cover;
+background-position: center;
+}
+
+.card{
+    background: linear-gradient(to right top, #9eb45b, #5d9fc0, #c84a4a, #bdcc36, #5bb4ae);
+    box-shadow: 1px 1px 6px 1px;
+    font-weight: bold;
+    font-size: 20px;
+}
